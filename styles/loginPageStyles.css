@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+font-family: "Poppins", sans-serif; 
+ */
+
+*{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: antiquewhite; 
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    /* background: url("../images/loging_background.jpg");
+    background-size: cover; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#70007a+7,bb00cc+42,0072c9+75,00187c+97 */
+background: linear-gradient(135deg,  rgba(112,0,122,1) 7%,rgba(187,0,204,1) 42%,rgba(0,114,201,1) 75%,rgba(0,24,124,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+/* login form */
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 15px;
+    /* background-color: #B928C9; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c7ae0+0,911f9b+65 */
+background: linear-gradient(135deg,  rgba(44,122,224,1) 0%,rgba(145,31,155,1) 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+h1
+{
+    text-align: center;
+}
+
+
+
+.form-block
+{
+    display: flex;
+    flex-direction: column;
+}
+
+form input
+{
+    outline: none;
+    border: none;
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+form button
+{
+    border: none;
+    outline: none;
+    background-color: black;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #4F0F42;
+    transition: 0.25s;
+}
+
+form button:hover
+{
+    background-color:#EA00C7;
+}
+
+form a
+{
+    color: antiquewhite;
+}

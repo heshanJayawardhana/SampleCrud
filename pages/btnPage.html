@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="padding: 15px; background-color: green;">
+        <p>Call Function on Action (Onclick)</p>
+        <br>
+        <button id="chngBtn" onclick="changeTopic()">Change</button>
+        <br><br><br>
+        <H1 id="text">Hello</H1>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div style="padding: 15px; background-color: purple;">
+        <p>Call Function on Action with Parameters (Onclick)</p>
+        <br>
+        <button id="chngBtn1" onclick="changeTopic2('text1')">Change</button>
+        <br><br><br>
+        <H1 id="text1">Hi !</H1>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div style="padding: 15px; background-color: blueviolet;">
+        <p>Add Event Listener to call function</p>
+        <br>
+        <button id="chngBtn2">Change</button>
+        <br><br><br>
+        <H1 id="text2">Yo!</H1>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div style="padding: 15px; background-color: antiquewhite;">
+        <p>Implement theAction inside of Event Listener</p>
+        <br>
+        <button id="chngBtn3">Change</button>
+        <br><br><br>
+        <H1 id="text3">Hola !</H1>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <div style="padding: 15px; background-color: burlywood;">
+        <button class="textBtn" onclick="bangText('Sri Lanka,', 'bang')" style="margin-right: 15px;">Change</button>
+        <button class="textBtn" onclick="bangText('historically known as Ceylon', 'bang')" style="margin-right: 15px;">More</button>
+        <button class="textBtn" onclick="bangText('country in South Asia', 'bang')" style="margin-right: 15px;">Value</button>
+        <br><br>
+        <h2 id="bang">Democratic Socialist Republic of Sri Lanka</h2>
+    </div>
+
+    <script>
+
+        // call as onclikc function
+        function changeTopic ()
+        {
+           // var btn1 = document.getElementById('chngBtn');
+            var txt1 = document.getElementById('text');
+
+            txt1.innerHTML= 'Kanishka';
+        }
+
+        // call as onclick function with parameters
+        function changeTopic2 ( txt)
+        {
+            var txt2= document.getElementById(txt);
+
+            txt2.innerHTML = 'Thadiya';
+        }
+
+
+        // adding Event Listener
+        let btn = document.getElementById('chngBtn2');
+        let txt = document.getElementById('text2');
+
+        function changeTopic3 () {
+            txt.textContent = "Yo Kanishka!";
+        }
+
+        btn.addEventListener('click', changeTopic3);
+
+        // implement the actioninside of event listener
+        let acBtn = document.getElementById('chngBtn3');
+
+        acBtn.addEventListener('click', () => {
+            let txtVal = document.getElementById('text3');
+            txtVal.textContent = "Hola Spaniola !!"
+        })
+
+        // Bang text Value
+        function bangText (textValue, textElement) {
+            let text = document.getElementById(textElement);
+
+            text.textContent = textValue;
+        }
+
+    </script>
+</body>
+</html>
